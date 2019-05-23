@@ -1,0 +1,19 @@
+{
+  "name": "chub",
+  "version": "1.0.0",
+  "description": "A nodejs demo website",
+  "main": "app.js",
+  "scripts": {
+    "test": "Error: no test specified exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "express": "^4.17.0",
+    "hogan-express": "^0.5.2",
+    "multer": "^1.4.1",
+    "restler": "^3.4.0"
+  }
+}

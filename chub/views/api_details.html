@@ -1,0 +1,54 @@
+{{> header }}
+
+<div class="col pt-40">
+  <form id="api_form" action="save_new_api">
+    <div class="form-group form-group--detail">
+      <label>Api Details</label>
+      <input name="api_detail" type="text" value="{{api_detail}}" class="form-control input-lg" placeholder="Enter api details">
+    </div>
+    <div class="form-group form-group--name">
+      <label>Name</label>
+      <input name="api_name" type="text" value="{{api_name}}" class="form-control input-lg" placeholder="Enter api name">
+    </div>
+    <div class="form-group form-group--proxy">
+      <label>Proxy</label>
+      <input name="api_proxy" type="text" value="{{api_proxy}}" class="form-control input-lg" placeholder="Enter api proxy">
+    </div>
+    <div class="form-group form-group--end-point">
+      <label>End point</label>
+      <input name="api_end_point" type="text" value="{{api_end_point}}" class="form-control input-lg" placeholder="Enter api end point">
+    </div>
+    <div class="form-group form-group--apigee-end-point">
+      <label>Apigee End point</label>
+      <input name="api_apigee_end_point" type="text" value="{{api_apigee_end_point}}" class="form-control input-lg" placeholder="Enter api apigee end point">
+    </div>
+    <div class="form-group form-group--edp-end-point">
+      <label>EDP End point</label>
+      <input name="api_edp_end_point" type="text" value="{{api_edp_end_point}}" class="form-control input-lg" placeholder="Enter api EDP end point">
+    </div>
+
+    <div class="alert alert-success success-message hidden">
+      Success
+    </div>
+    <div class="alert alert-danger error-message hidden">
+      Error
+    </div>
+
+    <div class="form-group mt-20">
+
+    </div>
+
+
+    <div class="form-group mt-20">
+      <p style="margin: 0px 10px 0px 45%; display:inline-block; vertical-align: top;"><a class="btn btn-primary btn-lg" href="api_list" role="button">Back</a></p>
+
+    {{#isSave}}
+      <button class="btn btn-primary btn-lg submit-btn" type="submit">Submit</button>
+    {{/isSave}}
+
+    </div>
+
+  </form>
+</div>
+
+{{> footer }}
